@@ -129,8 +129,8 @@ box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 .satnderd-and-stories{
-    margin: 100px 0px;
-    padding: 100px 0px 50px 0px;
+    margin: 30px 0px;
+    padding: 100px 0px 10px 0px;
     background:url(../assets/bg.png);
     /* background-repeat: no-repeat; */
     /* background-size: cover;
@@ -183,8 +183,8 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     grid-row: span 2;
 }
 .stories{
-    margin: 50px 0px;
-    padding: 60px 0px 150px 0px;
+    margin: 20px 0px;
+    padding: 30px 0px 10px 0px;
     /* background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%); */
     /* background:url(../assets/bg.png),
     Linear gradient
@@ -224,8 +224,35 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 .v-btn{
     background-color: black;
     color: white;   
-    margin-top: 8vh;
+    margin-top: 5vh;
     /* margin: auto; */
+}
+/* Fotter-Section */
+.footer-dis{
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3a425f;
+    padding: 2vw 9vw;
+    color: white !important;
+}
+.footer-list ul{
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+}
+.logo-dis{
+    width: 40%;
+}
+.footer-online-logo{
+    justify-content: center;
+    gap: 20px;
+}
+.footer-online-logo img {
+    width: 50px;
+    height: 50px;
+}
+.img-dis{
+    align-items: center;
 }
 @media screen and (max-width:576px) {
     nav ul li{
@@ -277,7 +304,8 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 
 .stories-card{
-    grid-template-columns: 100%;
+    grid-template-columns:repeat(2,calc( 50% - 2vw));
+    grid-template-rows: repeat(3,1fr);
 }
 
 .icon{
@@ -298,4 +326,36 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     margin-top: 3vh;
     /* margin: auto; */
 }
+.card-1{
+    grid-row: span 1;
+}
+.satnderd-and-stories{
+    margin: 10px 0px;
+    padding: 30px 0px 10px 0px;}
+
+    /* Footer-Section */
+    .footer-dis{
+        background-color: #3a425f;
+        padding: 2vw;
+       
+        flex-direction: column;
+        gap: 30px;
+        }
+    
+    .footer-dis >div{
+        width: calc(100% - 3vw);
+    }
+    .img-dis{
+        align-items: normal;
+    }
+    .footer-online-logo{
+        justify-content: flex-start;
+    }
+    .footer-logo-dis{
+        padding: 1vw;
+    }
+    .footer-list
+    {
+        padding: 1.5vw;
+    }
 }
