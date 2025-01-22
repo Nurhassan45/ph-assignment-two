@@ -4,6 +4,9 @@
     font-family: "Fira Sans", serif; 
     box-sizing: border-box ;
 }
+body{
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
 /* Universal-Class */
 .flex{
     display: flex;
@@ -127,6 +130,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .satnderd-and-stories{
     margin: 100px 0px;
+    padding: 100px 0px 50px 0px;
     background:url(../assets/bg.png);
     /* background-repeat: no-repeat; */
     /* background-size: cover;
@@ -179,7 +183,49 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     grid-row: span 2;
 }
 .stories{
-    margin: 150px 0px;
+    margin: 50px 0px;
+    padding: 60px 0px 150px 0px;
+    /* background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%); */
+    /* background:url(../assets/bg.png),
+    Linear gradient
+    rgba(254, 163, 1, 0.3)
+    rgba(255, 255, 255, 0.3); */
+    /* box-shadow: 0px 0px 15px linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3)); */
+    /* background:linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3)) ; */
+}
+.stories>h2{
+    font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    margin: 60px auto;
+}
+.icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 80px;
+   gap: 20px;
+}
+.icon div{
+    background-color:orange;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+.icon img{
+    width: 60px;
+    height: 60px;
+}
+.v-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.v-btn{
+    background-color: black;
+    color: white;   
+    margin-top: 8vh;
+    /* margin: auto; */
 }
 @media screen and (max-width:576px) {
     nav ul li{
@@ -232,5 +278,24 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 
 .stories-card{
     grid-template-columns: 100%;
+}
+
+.icon{
+    display: none;
+}
+.stories{
+    margin: 10px 0px;
+    padding: 10px 0px 30px 0px;
+    background:url(../assets/bg.png);
+}
+.satnderd-and-stories{
+    margin: 40px 0px;
+    padding: 50px 0px 50px 0px;
+   
+}
+.v-btn{
+   
+    margin-top: 3vh;
+    /* margin: auto; */
 }
 }
