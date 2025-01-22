@@ -4,6 +4,9 @@
     font-family: "Fira Sans", serif; 
     box-sizing: border-box ;
 }
+button{
+    cursor: pointer;
+}
 body{
     background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
@@ -22,6 +25,14 @@ body{
 .God-div{
     padding:20px 9vw;
 }
+.school-logo h3{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.school-logo h3 span{
+    font-size: 50px;
+    color: #F0AA00;
+}
 /* nav-section */
 .contact{
     background-color: orange;
@@ -29,6 +40,9 @@ body{
 nav{
     justify-content: space-between;
    margin-bottom: 5vh;
+   position: sticky;
+   top: 0px;
+   left: 0px;
 }
 .school-logo{
     align-items: center;
@@ -58,6 +72,24 @@ nav ul li {
 .menu-logo{
     display: none;
 }
+
+.scrolling-cotainer{
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    border-radius: 10px;
+}
+.scrolling-cotainer span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #01ACFD;
+}
 /* Hero-section */
 .hero-section{
     gap: 30px;
@@ -80,9 +112,14 @@ nav ul li {
 .hero-left-div p{
     margin:1.3vw 0px;
     width: 450px;
+    font-size: 20px;
 }
 .hero-right-div{
     width: 40%;
+}
+.hero-left-div h2{
+    font-size: 3.5vw;
+    line-height: 70px;
 }
 .hero-right-div img{
     width: 100%;
@@ -120,13 +157,31 @@ nav ul li {
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
+.card1 button{
+    background: transparent;
+    border: none;
+    color:#64C8FF ;
+    font-size: 18px;
+}
 .card2{
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.standard-Curriculum .card2 button{
+    background: transparent;
+    color:#F0AA00 ;
+    font-size: 18px;
+    border: none;
 }
 .card3{
 box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
 background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.card3 button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color:#8700FF ;
 }
 .satnderd-and-stories{
     margin: 30px 0px;
@@ -135,6 +190,11 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     /* background-repeat: no-repeat; */
     /* background-size: cover;
     background-position: center; */
+}
+.satnderd-and-stories h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .stories-card{
@@ -211,6 +271,12 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     padding: 10px;
     border-radius: 50%;
     color: white;
+    transition: 0.3s;
+    box-shadow:inset 0px 0px 5px black;
+}
+.icon div:hover{
+    background-color: #05D4DF;
+    box-shadow:inset 0px 0px 15px black;
 }
 .icon img{
     width: 60px;
@@ -265,6 +331,9 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     .contact{
         display: none;
   }
+  .school-logo h3{
+    display: none;
+  }
   .menu-logo{
     display:inline;
   }
@@ -288,6 +357,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
   .hero-right-div{
     width: 100%;
   }
+  .hero-left-div h2{
+    font-size: 8vw;
+    line-height: 50px;
+}
 .God-div{
     padding:20px 3vw;
 }
@@ -297,6 +370,12 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     width:calc( 100% - 35px - 3vw);
 }
 
+.stories-card>div .btn2, .btn3 ,.btn4,.btn5{
+    
+    top: -8%;
+    left: 15%;
+
+}
 .standard-Curriculum{
     gap: 4vw;
     flex-direction: column;
@@ -305,7 +384,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 
 .stories-card{
     grid-template-columns:repeat(2,calc( 50% - 2vw));
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 
 .icon{
@@ -326,8 +405,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     margin-top: 3vh;
     /* margin: auto; */
 }
-.card-1{
-    grid-row: span 1;
+.stories-card .card-1
+{
+    display: none;
+    visibility: hidden;
 }
 .satnderd-and-stories{
     margin: 10px 0px;
@@ -337,13 +418,15 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     .footer-dis{
         background-color: #3a425f;
         padding: 2vw;
-       
+        padding-top: 30px;
+        /* margin-top: 20px; */
         flex-direction: column;
         gap: 30px;
         }
     
     .footer-dis >div{
         width: calc(100% - 3vw);
+
     }
     .img-dis{
         align-items: normal;
