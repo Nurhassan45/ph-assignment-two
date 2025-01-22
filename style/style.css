@@ -97,7 +97,7 @@ nav ul li {
     gap: 4vw;
     justify-content: center;
     align-items: center;
-    
+ 
 }
 .standard-Curriculum >div{
    
@@ -127,6 +127,59 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .satnderd-and-stories{
     margin: 100px 0px;
+    background:url(../assets/bg.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;
+    background-position: center; */
+}
+
+.stories-card{
+    display: grid;
+    grid-template-columns: 40% repeat(2,1fr);
+    grid-template-rows: repeat(2,2fr) ;
+    gap: 20px;
+    /* position: relative; */
+    background:url(../assets/bg.png);
+
+}
+
+.stories-card>div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    gap: 10px;
+}
+.stories-card>div h2,p {
+    margin: 10px 10px;
+}
+.stories-card>div .btn2, .btn3 ,.btn4,.btn5{
+    position: relative;
+    background-color: #5D58EF;
+    width: 150px;
+    height: 50px;
+    top: -10%;
+    left: 10%;
+
+}
+.btn1{
+    position: relative;
+    top: -5%;
+    left: 5%;
+    background-color: #5D58EF;
+    width: 150px;
+    height: 50px;
+}
+.stories-card>div img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-1{
+    grid-row: span 2;
+}
+.stories{
+    margin: 150px 0px;
 }
 @media screen and (max-width:576px) {
     nav ul li{
@@ -175,5 +228,9 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     gap: 4vw;
     flex-direction: column;
     
+}
+
+.stories-card{
+    grid-template-columns: 100%;
 }
 }
