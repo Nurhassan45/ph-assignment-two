@@ -118,7 +118,7 @@ nav ul li {
 }
 .hero-left-div h2{
     font-size: 3.5vw;
-    line-height: 3.5vw;
+    line-height: 4vw;
 }
 .hero-right-div img{
     width: 100%;
@@ -364,7 +364,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
   }
   .hero-left-div p{
     margin:1.3vw 0px;
-    width: calc(100% - 2vw);
+    width: 100%;
     font-size: 20px;
 }
   .hero-right-div{
@@ -396,7 +396,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 
 .stories-card{
-    grid-template-columns:repeat(2,calc( 50% - 4vw));
+    grid-template-columns:repeat(2,calc( 50% - 20px));
     grid-template-rows: repeat(2,1fr);
 }
 
@@ -476,7 +476,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     }
     .hero-left-div h2{
         font-size: 4vw;
-        line-height: 30px;
+        line-height:4.5vw;
     }
 
     .hero-right-div {
