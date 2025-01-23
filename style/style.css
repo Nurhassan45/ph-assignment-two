@@ -76,6 +76,7 @@ nav ul li {
     align-items: center;
     background-color: orange;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .scrolling-cotainer span{
     display: flex;
@@ -361,6 +362,11 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     align-items: center;
     width: 100%;
   }
+  .hero-left-div p{
+    margin:1.3vw 0px;
+    width: calc(100% - 2vw);
+    font-size: 20px;
+}
   .hero-right-div{
     width: 100%;
   }
@@ -390,7 +396,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 
 .stories-card{
-    grid-template-columns:repeat(2,calc( 50% - 2vw));
+    grid-template-columns:repeat(2,calc( 50% - 4vw));
     grid-template-rows: repeat(2,1fr);
 }
 
@@ -406,6 +412,13 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     margin: 40px 0px;
     padding: 50px 0px 50px 0px;
    
+}
+.stories-card>div .btn2, .btn3 ,.btn4,.btn5{
+   
+    width: 100px;
+    height: 50px;
+  
+
 }
 .v-btn{
    
