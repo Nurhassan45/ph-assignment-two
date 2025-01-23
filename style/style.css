@@ -40,9 +40,7 @@ body{
 nav{
     justify-content: space-between;
    margin-bottom: 5vh;
-   position: sticky;
-   top: 0px;
-   left: 0px;
+ 
 }
 .school-logo{
     align-items: center;
@@ -200,9 +198,9 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 .stories-card{
     display: grid;
     grid-template-columns: 40% repeat(2,1fr);
-    grid-template-rows: repeat(2,2fr) ;
+    grid-template-rows: repeat(2,1fr) ;
     gap: 20px;
-    /* position: relative; */
+   
     background:url(../assets/bg.png);
 
 }
@@ -214,6 +212,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     gap: 10px;
+    position: relative;
 }
 .stories-card>div h2,p {
     margin: 10px 10px;
@@ -223,7 +222,7 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     background-color: #5D58EF;
     width: 150px;
     height: 50px;
-    top: -10%;
+    top: -8%;
     left: 10%;
 
 }
@@ -258,6 +257,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     font-size: 36px;
     text-align: center;
     margin: 60px auto;
+}
+.stories-card h2{
+    font-weight: 500;
+    font-size: 25px;
 }
 .icon{
    display: flex;
@@ -319,6 +322,10 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
 }
 .img-dis{
     align-items: center;
+}
+.img-dis h2{
+    align-items: center;
+    justify-content: center;
 }
 @media screen and (max-width:576px) {
     nav ul li{
