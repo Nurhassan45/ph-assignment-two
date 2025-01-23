@@ -118,7 +118,7 @@ nav ul li {
 }
 .hero-left-div h2{
     font-size: 3.5vw;
-    line-height: 70px;
+    line-height: 3.5vw;
 }
 .hero-right-div img{
     width: 100%;
@@ -461,4 +461,61 @@ background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0)
     {
         padding: 1.5vw;
     }
+}
+/* For-Tab */
+
+@media screen and (min-width:576px) and (max-width:1100px)
+{
+
+    .hero-left-div{
+        width: 50%;
+    }
+
+    .hero-left-div p{
+        width:100%;
+    }
+    .hero-left-div h2{
+        font-size: 4vw;
+        line-height: 30px;
+    }
+
+    .hero-right-div {
+        width: 45%;
+    }
+
+    .contact{
+        display: none;
+  }
+  .school-logo h3{
+    display: none;
+  }
+  .menu-logo{
+    display:inline;
+  }
+  nav ul li{
+    display: none;
+}
+.icon{
+    display: none;
+}
+/* standerd-Curriculam */
+.standard-Curriculum{
+   flex-wrap: wrap;
+}
+.card1,.card2,.card3{
+    width: 40%;
+   
+}
+.stories-card{
+    grid-template-columns:repeat(2,calc( 50% - 2vw));
+    grid-template-rows: repeat(2,1fr);
+}
+.stories-card .card-1
+{
+    display: none;
+    visibility: hidden;
+}
+.footer-dis{
+    flex-wrap: wrap;
+}
 }
